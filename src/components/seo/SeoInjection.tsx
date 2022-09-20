@@ -42,7 +42,7 @@ export const SeoInjection: FC<SeoInjectionProps> = ({
   const title = pageTitle ? `${pageTitle} | ${DEFAULT_TITLE}` : DEFAULT_TITLE;
   const description = pageDescription ?? DEFAULT_DESCRIPTION;
   const imgUrl = pageImg ?? DEFAULT_IMG;
-  const imgWidth = pageImgWidth ?? 1280;
+  const imgWidth = pageImgWidth ?? 640;
   const imgHeight = pageImgHeight ?? 640;
   const type = pageType;
 
