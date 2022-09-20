@@ -62,7 +62,7 @@ export const SkillsContent: FC = () => {
             );
           })}
         </section>
-        <h2>Favorite Tools</h2>{" "}
+        <h2>Favorite Tools</h2>
         <section className={CardListContainer}>
           {toolsSkillContentList.map((content, index) => {
             return (
