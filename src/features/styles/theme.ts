@@ -16,6 +16,7 @@ export const basic = {
 export const background = {
   default: color.steelGray,
   light: color.minsk,
+  highLight: color.white,
 } as const;
 
 export const text = {
