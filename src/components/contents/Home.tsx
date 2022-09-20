@@ -1,10 +1,11 @@
 import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CareerContentList } from "../../features/career/Content";
+import { careerContentList } from "../../features/career/Content";
 import { ArrowRightSvgIcon } from "../icons/ArrowRightSvgIcon";
 import {
   MainContainer,
+  IntroTitle,
   CommonCardContainer,
   CommonCardTitleContainer,
   CommonCardDescriptionContainer,
@@ -22,6 +23,7 @@ import {
 export const HomeContent: FC = () => {
   return (
     <main className={MainContainer}>
+      <h1 className={IntroTitle}>Cut0 Portfolio</h1>
       <section className={TopCardContainer}>
         <div className={ProfileImgContainer}>
           <Image
@@ -34,7 +36,7 @@ export const HomeContent: FC = () => {
           ></Image>
         </div>
         <div className={TopCardDescriptionContainer}>
-          <h1>Cut0</h1>
+          <h2>Cut0</h2>
           <span>Web Frontend Engineer</span>
         </div>
       </section>
@@ -51,7 +53,7 @@ export const HomeContent: FC = () => {
       <section className={CommonCardContainer}>
         <h2 className={CommonCardTitleContainer}>Career</h2>
         <ul className={CommonCardDescriptionContainer}>
-          {CareerContentList.reverse().map((content, index) => {
+          {careerContentList.reverse().map((content, index) => {
             return (
               <li key={index}>
                 <span className={CareerYear}>{content.year}</span>
@@ -65,9 +67,9 @@ export const HomeContent: FC = () => {
         <h2 className={CommonCardTitleContainer}>Skills</h2>
         <div className={CommonCardDescriptionContainer}>
           <p>
-            自分の触ったことのある技術をできるだけ記載しました。
+            自分の触ったことのある言語や好みのライブラリなど技術に関するものを記載しました。
             <br />
-            評価に関しては自己評価なのであてにしないでください。
+            評価は主観によるものなのであまり気にしないでください。
           </p>
           <div className={JumpLinkContainer}>
             <Link href="/skills" passHref>

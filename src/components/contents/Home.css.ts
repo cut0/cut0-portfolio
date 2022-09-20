@@ -9,6 +9,10 @@ export const MainContainer = style({
   gap: "32px",
 });
 
+export const IntroTitle = style({
+  textAlign: "center",
+});
+
 export const TopCardContainer = style({
   boxShadow: "inset 9px 9px 16px #252130,inset -9px -9px 16px #332d40",
   borderRadius: "16px",
