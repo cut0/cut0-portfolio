@@ -3,7 +3,7 @@ type CareerContentType = {
   summary: string;
 }[];
 
-export const CareerContentList: CareerContentType = [
+export const careerContentList: CareerContentType = [
   {
     year: " ~2019年",
     summary:
