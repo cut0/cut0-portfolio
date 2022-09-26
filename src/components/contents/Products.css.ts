@@ -72,7 +72,6 @@ export const ProductImgContainer = style({
   height: "100px",
   flexShrink: "0",
   marginRight: "24px",
-
   "@media": {
     "screen and (min-width: 768px)": {
       width: "130px",
