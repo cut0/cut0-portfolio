@@ -8,6 +8,10 @@ globalStyle("html", {
   backgroundColor: background.default,
 });
 
+globalStyle("body", {
+  fontFamily: "sans-serif",
+});
+
 globalStyle("a", {
   textDecoration: "none",
 });

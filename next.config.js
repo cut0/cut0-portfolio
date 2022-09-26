@@ -10,6 +10,7 @@ const withVanillaExtract = createVanillaExtractPlugin();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  optimizeFonts: true,
 };
 
 module.exports = withBundleAnalyzer(withVanillaExtract(withPreact(nextConfig)));
