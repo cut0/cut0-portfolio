@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { careerContentList } from "../../features/career/Content";
 import { ArrowRightSvgIcon } from "../icons/ArrowRightSvgIcon";
+import { TwitterSvgIcon } from "../icons/TwitterSvgIcon";
+import { GitHubSvgIcon } from "../icons/GitHubSvgIcon";
+import { MailSvgIcon } from "../icons/MailSvgIcon";
 import {
   MainContainer,
   IntroTitle,
@@ -18,6 +21,10 @@ import {
   JumpLinkContainer,
   JumpLink,
   JumpLinkTitle,
+  ContactListContainer,
+  JumpSNS,
+  SNSTitle,
+  TwitterLogo,
 } from "./Home.css";
 
 export const HomeContent: FC = () => {
@@ -122,6 +129,50 @@ export const HomeContent: FC = () => {
             >
               <span className={JumpLinkTitle}>Tech Blog</span>
               <ArrowRightSvgIcon title="arrow-right" width={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className={CommonCardContainer}>
+        <h2 className={CommonCardTitleContainer}>Contact</h2>
+        <div className={CommonCardDescriptionContainer}>
+          <p>
+            連絡先です。
+            <br />
+            基本的に Twitter の DM に連絡いただければ返信できます。
+            <br />
+            ※外部リンクです。
+          </p>
+          <div className={ContactListContainer}>
+            <a
+              className={JumpSNS}
+              href="https://twitter.com/cut0_"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <TwitterSvgIcon
+                className={TwitterLogo}
+                title="Twitter"
+                width={32}
+              />
+              <span className={SNSTitle}>Twitter</span>
+            </a>
+            <a
+              className={JumpSNS}
+              href="https://github.com/cut0"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GitHubSvgIcon title="GitHub" width={32} />
+              <span className={SNSTitle}>GitHub</span>
+            </a>
+            <a
+              className={JumpSNS}
+              href="mailto: zeron9421@gmail.com"
+              rel="noreferrer"
+            >
+              <MailSvgIcon title="Mail" width={32} />
+              <span className={SNSTitle}>Mail</span>
             </a>
           </div>
         </div>

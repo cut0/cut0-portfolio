@@ -5,12 +5,14 @@ export const color = {
   white: "#FFFFFF",
   carnation: "#FF515B",
   springGreen: "#23FF95",
+  twitter: "#379BF0",
 } as const;
 
 export const basic = {
   primary: color.minsk,
   error: color.carnation,
   success: color.springGreen,
+  twitter: color.twitter,
 } as const;
 
 export const background = {

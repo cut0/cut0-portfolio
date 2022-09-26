@@ -1,5 +1,6 @@
 import { style } from "@vanilla-extract/css";
-import { fontSize, text } from "../../features/styles/theme";
+import { BaseNextRequest } from "next/dist/server/base-http";
+import { basic, fontSize, text } from "../../features/styles/theme";
 
 export const MainContainer = style({
   maxWidth: "1024px",
@@ -121,4 +122,37 @@ export const JumpLink = style({
 
 export const JumpLinkTitle = style({
   marginRight: "8px",
+});
+
+export const ContactListContainer = style({
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill,minmax(165px,1fr))",
+  paddingTop: "16px",
+  gap: "16px",
+});
+
+export const JumpSNS = style({
+  display: "flex",
+  alignItems: "center",
+  color: text.default,
+  fontWeight: "bold",
+  padding: "16px 24px",
+  borderRadius: "16px",
+  boxShadow: "9px 9px 16px #252130, -9px -9px 16px #332d40;",
+  selectors: {
+    "&:focus": {
+      boxShadow: "inset 9px 9px 16px #252130,inset -9px -9px 16px #332d40",
+    },
+    "&:hover": {
+      boxShadow: "inset 9px 9px 16px #252130,inset -9px -9px 16px #332d40",
+    },
+  },
+});
+
+export const SNSTitle = style({
+  marginLeft: "8px",
+});
+
+export const TwitterLogo = style({
+  color: basic.twitter,
 });
