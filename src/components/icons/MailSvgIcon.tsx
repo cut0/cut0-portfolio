@@ -1,10 +1,10 @@
 import { FC, SVGAttributes } from "react";
 
-type MailSvgIcon = SVGAttributes<SVGElement> & {
+type MailSvgIconProps = SVGAttributes<SVGElement> & {
   title: string;
 };
 
-export const MailSvgIcon: FC<MailSvgIcon> = ({
+export const MailSvgIcon: FC<MailSvgIconProps> = ({
   title,
   fill = "currentColor",
   ...svgProps

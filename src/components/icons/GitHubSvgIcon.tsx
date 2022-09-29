@@ -1,10 +1,10 @@
 import { FC, SVGAttributes } from "react";
 
-type GitHubSvgIcon = SVGAttributes<SVGElement> & {
+type GitHubSvgIconProps = SVGAttributes<SVGElement> & {
   title: string;
 };
 
-export const GitHubSvgIcon: FC<GitHubSvgIcon> = ({
+export const GitHubSvgIcon: FC<GitHubSvgIconProps> = ({
   title,
   fill = "currentColor",
   ...svgProps

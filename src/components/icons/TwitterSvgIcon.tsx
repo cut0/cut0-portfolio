@@ -1,10 +1,10 @@
 import { FC, SVGAttributes } from "react";
 
-type TwitterSvgIcon = SVGAttributes<SVGElement> & {
+type TwitterSvgIconProps = SVGAttributes<SVGElement> & {
   title: string;
 };
 
-export const TwitterSvgIcon: FC<TwitterSvgIcon> = ({
+export const TwitterSvgIcon: FC<TwitterSvgIconProps> = ({
   title,
   fill = "currentColor",
   ...svgProps

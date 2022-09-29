@@ -1,10 +1,10 @@
 import { FC, SVGAttributes } from "react";
 
-type ArrowLeftSvgIcon = SVGAttributes<SVGElement> & {
+type ArrowLeftSvgIconProps = SVGAttributes<SVGElement> & {
   title: string;
 };
 
-export const ArrowLeftSvgIcon: FC<ArrowLeftSvgIcon> = ({
+export const ArrowLeftSvgIcon: FC<ArrowLeftSvgIconProps> = ({
   title,
   fill = "currentColor",
   ...svgProps
