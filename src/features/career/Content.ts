@@ -65,4 +65,16 @@ export const careerContentList: CareerContentType = [
     year: "2022年9月",
     summary: "Open Hack U で入賞を逃す",
   },
+  {
+    year: "2022年10月 ~ 2023年2月",
+    summary: "株式会社サイバーエージェントの某所で内定者アルバイト",
+  },
+  {
+    year: "2023年3月",
+    summary: "Web Speed Hackathon で優勝！リベンジ達成！！",
+  },
+  {
+    year: "2023年4月",
+    summary: "株式会社サイバーエージェントに入社",
+  },
 ];

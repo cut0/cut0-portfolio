@@ -39,22 +39,22 @@ export const languageSkillContentList: SkillContentType[] = [
     evaluation: 0,
     tags: [],
   },
-  {
-    name: "Rust",
-    summary:
-      "趣味でちょっと触りました。まだまだです。Rust で WASM を触りたいです。",
-    link: "https://www.rust-lang.org/ja",
-    evaluation: 0,
-    tags: [],
-  },
-  {
-    name: "Go",
-    summary:
-      "趣味で簡易的な API サーバーを構築しました。非常にシンプルな点は個人的にすごく好きです。",
-    link: "https://go.dev/",
-    evaluation: 0,
-    tags: [],
-  },
+  // {
+  //   name: "Rust",
+  //   summary:
+  //     "趣味でちょっと触りました。まだまだです。Rust で WASM を触りたいです。",
+  //   link: "https://www.rust-lang.org/ja",
+  //   evaluation: 0,
+  //   tags: [],
+  // },
+  // {
+  //   name: "Go",
+  //   summary:
+  //     "趣味で簡易的な API サーバーを構築しました。非常にシンプルな点は個人的にすごく好きです。",
+  //   link: "https://go.dev/",
+  //   evaluation: 0,
+  //   tags: [],
+  // },
   {
     name: "C#",
     summary:
