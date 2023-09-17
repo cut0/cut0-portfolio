@@ -1,5 +1,4 @@
 import { style } from "@vanilla-extract/css";
-import { BaseNextRequest } from "next/dist/server/base-http";
 import { basic, fontSize, text } from "../../features/styles/theme";
 
 export const MainContainer = style({

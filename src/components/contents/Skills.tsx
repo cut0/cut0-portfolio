@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { FC } from "react";
 import {
-  languageSkillContentList,
-  liblariesSkillContentList,
+  LANGUAGE_LIST,
+  LIBLARIE_LIST,
   toolsSkillContentList,
 } from "../../features/skills/Content";
 import { ArrowLeftSvgIcon } from "../icons/ArrowLeftSvgIcon";
@@ -23,6 +23,7 @@ export const SkillsContent: FC = () => {
     <>
       <header className={Header}>
         <Link href="/" passHref>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className={JumpLink}>
             <ArrowLeftSvgIcon title="arrow-left" width={16} />
             <span className={JumpLinkTitle}>back</span>
@@ -38,9 +39,10 @@ export const SkillsContent: FC = () => {
         </div>
         <h2>Languages</h2>
         <section className={CardListContainer}>
-          {languageSkillContentList.map((content, index) => {
+          {LANGUAGE_LIST.map((content, index) => {
             return (
               <Link href={content.link} key={index} passHref>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={CardContainer} target="_blank">
                   <h3 className={CardTitle}>{content.name}</h3>
                   <p>{content.summary}</p>
@@ -51,9 +53,10 @@ export const SkillsContent: FC = () => {
         </section>
         <h2>Favorite Liblaries</h2>
         <section className={CardListContainer}>
-          {liblariesSkillContentList.map((content, index) => {
+          {LIBLARIE_LIST.map((content, index) => {
             return (
               <Link href={content.link} key={index} passHref>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={CardContainer} target="_blank">
                   <h3 className={CardTitle}>{content.name}</h3>
                   <p>{content.summary}</p>
@@ -67,6 +70,7 @@ export const SkillsContent: FC = () => {
           {toolsSkillContentList.map((content, index) => {
             return (
               <Link href={content.link} key={index} passHref>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={CardContainer} target="_blank">
                   <h3 className={CardTitle}>{content.name}</h3>
                   <p>{content.summary}</p>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FC } from "react";
-import { productContentList } from "../../features/products/Content";
+import { PRODUCT_LIST } from "../../features/products/Content";
 import { ArrowLeftSvgIcon } from "../icons/ArrowLeftSvgIcon";
 import {
   Header,
@@ -22,6 +22,7 @@ export const ProductsContent: FC = () => {
     <>
       <header className={Header}>
         <Link href="/" passHref>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className={JumpLink}>
             <ArrowLeftSvgIcon title="arrow-left" width={16} />
             <span className={JumpLinkTitle}>back</span>
@@ -34,9 +35,10 @@ export const ProductsContent: FC = () => {
           <p>プライベートで作ったプロダクトを載せます。</p>
         </div>
         <section className={ProductListContainer}>
-          {productContentList.map((content, index) => {
+          {PRODUCT_LIST.map((content, index) => {
             return (
               <Link href={content.link} key={index} passHref>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className={ProductCardContainer} target="_blank">
                   <div className={ProductImgContainer}>
                     <Image

@@ -1,11 +1,11 @@
-type ProductContentType = {
+type Product = {
   title: string;
   summary: string;
   imgUrl: string;
   link: string;
 };
 
-export const productContentList: ProductContentType[] = [
+export const PRODUCT_LIST: Product[] = [
   {
     title: "AST Viewer",
     summary: "ブラウザ上でコードを書き AST を可視化するツールです。",

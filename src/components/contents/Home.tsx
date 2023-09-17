@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { careerContentList } from "../../features/career/Content";
+import { CAREER_LIST } from "../../features/career/Content";
 import { ArrowRightSvgIcon } from "../icons/ArrowRightSvgIcon";
 import { TwitterSvgIcon } from "../icons/TwitterSvgIcon";
 import { GitHubSvgIcon } from "../icons/GitHubSvgIcon";
@@ -60,7 +60,7 @@ export const HomeContent: FC = () => {
       <section className={CommonCardContainer}>
         <h2 className={CommonCardTitleContainer}>Career</h2>
         <ul className={CommonCardDescriptionContainer}>
-          {careerContentList.reverse().map((content, index) => {
+          {CAREER_LIST.reverse().map((content, index) => {
             return (
               <li key={index}>
                 <span className={CareerYear}>{content.year}</span>
@@ -80,6 +80,7 @@ export const HomeContent: FC = () => {
           </p>
           <div className={JumpLinkContainer}>
             <Link href="/skills" passHref>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className={JumpLink}>
                 <span className={JumpLinkTitle}>Skills</span>
                 <ArrowRightSvgIcon title="arrow-right" width={16} />
@@ -100,6 +101,7 @@ export const HomeContent: FC = () => {
           </p>
           <div className={JumpLinkContainer}>
             <Link href="/products" passHref>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a className={JumpLink}>
                 <span className={JumpLinkTitle}>Products</span>
                 <ArrowRightSvgIcon title="arrow-right" width={16} />

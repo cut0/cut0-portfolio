@@ -1,4 +1,4 @@
-type SkillContentType = {
+type SKILL = {
   name: string;
   summary: string;
   link: string;
@@ -6,7 +6,7 @@ type SkillContentType = {
   tags: string[];
 };
 
-export const languageSkillContentList: SkillContentType[] = [
+export const LANGUAGE_LIST: SKILL[] = [
   {
     name: "TypeScript",
     summary:
@@ -95,7 +95,7 @@ export const languageSkillContentList: SkillContentType[] = [
   },
 ];
 
-export const liblariesSkillContentList: SkillContentType[] = [
+export const LIBLARIE_LIST: SKILL[] = [
   {
     name: "React",
     summary: "非常にシンプルな点が好きです。使っていて楽しいです。",
@@ -216,7 +216,7 @@ export const liblariesSkillContentList: SkillContentType[] = [
   },
 ];
 
-export const toolsSkillContentList: SkillContentType[] = [
+export const toolsSkillContentList: SKILL[] = [
   {
     name: "GitHub",
     summary:

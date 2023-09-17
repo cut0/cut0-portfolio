@@ -1,9 +1,9 @@
-type CareerContentType = {
+type CAREER = {
   year: string;
   summary: string;
-}[];
+};
 
-export const careerContentList: CareerContentType = [
+export const CAREER_LIST: CAREER[] = [
   {
     year: " ~2019年",
     summary:

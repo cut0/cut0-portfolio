@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { background, fontSize, text } from "../../features/styles/theme";
+import { fontSize, text } from "../../features/styles/theme";
 
 export const Header = style({
   padding: "16px",
