@@ -1,5 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/strict",
+    "prettier"
+  ],
+  "plugins": ["react", "import"],
   "rules": {
     "react/jsx-sort-props": [
       "error",
@@ -9,5 +19,27 @@
       }
     ],
     "import/order": "error"
-  }
+  },
+  "ignorePatterns": ["**/*.config.js"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "project": "./"
+          }
+        }
+      }
+    }
+  ]
 }
