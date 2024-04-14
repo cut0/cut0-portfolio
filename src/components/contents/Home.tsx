@@ -125,7 +125,7 @@ export const HomeContent: FC = () => {
           <div className={JumpLinkContainer}>
             <a
               className={JumpLink}
-              href="https://cut0-blog.vercel.app/"
+              href="https://blog.cut0.app"
               rel="noreferrer"
               target="_blank"
             >
